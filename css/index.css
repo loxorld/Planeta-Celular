@@ -148,6 +148,14 @@ header {
         transition: border .6s;
     }
 
+    .menu__item--imagen {
+        transition: transform .6s;
+    }
+
+    .menu__item--imagen:hover {
+        transform: scale(1.05);
+    }
+
     .menu__item:hover {
         transform: scale(1.05);
         border: 0.3rem rgb(255, 255, 255) solid;
@@ -161,6 +169,7 @@ header {
         grid-row-gap: 1rem;
         grid-template-columns: repeat(6 , 1fr);
         grid-template-rows: 1fr 1fr;
+        transition: rotate 0.6s
     }
 
     .imagen {
@@ -169,19 +178,33 @@ header {
     }
 
     .ofertas__imagen1 {
-        
+        transition: transform 0.6s;
         grid-column: 1/7;
         grid-row: 1/2;
     }
 
+    .ofertas__imagen1:hover {
+        transform: rotate(1deg);
+    }
+
     .ofertas__imagen2 {
+        transition: transform 0.6s;
         grid-column: 1/4;
         grid-row: 2;
     }
 
+    .ofertas__imagen2:hover {
+        transform: rotate(1deg);
+    }
+
     .ofertas__imagen3 {
+        transition: transform 0.6s;
         grid-column: 4/7;
         grid-row: 2;
+    }
+
+    .ofertas__imagen3:hover {
+        transform: rotate(1deg);
     }
 
     .nosotros {
@@ -200,6 +223,7 @@ header {
      @media only screen and (min-width: 480px) {
      .ofertas__imagen1{
          width: 100%;
+
      }
 
      .ofertas__imagen2{
