@@ -144,9 +144,14 @@ header {
         font-size: 1.5rem;
         /* border: 0.3rem rgb(255, 255, 255) solid; */
         padding: 0px 0.3rem 0px 0.3rem;
+        transition: transform .6s;
+        transition: border .6s;
     }
 
-   
+    .menu__item:hover {
+        transform: scale(1.05);
+        border: 0.3rem rgb(255, 255, 255) solid;
+    }
 
     .ofertas {
         display: grid;
@@ -156,8 +161,6 @@ header {
         grid-row-gap: 1rem;
         grid-template-columns: repeat(6 , 1fr);
         grid-template-rows: 1fr 1fr;
-        
-        
     }
 
     .imagen {
