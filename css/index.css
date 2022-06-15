@@ -144,6 +144,8 @@ header {
         font-size: 1.5rem;
         /* border: 0.3rem rgb(255, 255, 255) solid; */
         padding: 0px 0.3rem 0px 0.3rem;
+        transition: transform .6s;
+        transition: border .6s;
     }
 
     .menu__item--imagen {
@@ -186,6 +188,7 @@ header {
     }
 
     .ofertas__imagen2 {
+        transition: transform 0.6s;
         grid-column: 1/4;
         grid-row: 2;
     }
