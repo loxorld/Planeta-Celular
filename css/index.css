@@ -22,6 +22,11 @@ a {
     color: white;
 }
 
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -38,15 +43,23 @@ header {
         padding: 1rem; /* Le hace un marco hacia adentro a mi header, haciendo que no queden las cosas pegadas al borde */
     }
 
-    .formulario {
-        padding: 1rem;
-    }
+.formulario {
+    padding: 1rem;
+ }
 
     
-    main {
-        background-color: #ff7cbc;
-        border: 0.7rem white solid;
-    }
+main {
+    background-color: #ff7cbc;
+    border: 0.7rem white solid;
+  }
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 600px;
+    max-height: 430px;    
+}
+
 
 /* Celular */
 
@@ -63,6 +76,7 @@ header {
         display: flex;
         align-items: center;
         flex-direction: column;
+        
     }
 
     .menu__item {
@@ -133,6 +147,7 @@ header {
         padding: 1rem;
     } 
 
+
     .menu {
     display: flex;
     justify-content: center;
@@ -142,7 +157,7 @@ header {
     .menu__item {
         font-family: 'Oswald';
         font-size: 1.5rem;
-        /* border: 0.3rem rgb(255, 255, 255) solid; */
+        margin: 1rem;
         padding: 0px 0.3rem 0px 0.3rem;
         transition: transform .6s;
         transition: border .6s;
